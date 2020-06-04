@@ -1,2 +1,9 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Biblioteca do Vitão</h1>
+
+<table>
+    <tr><td><%= link_to "Clientes", clients_path%></td></tr>
+    <tr><td><%= link_to "Livros", books_path%></td><td></tr>
+    <tr><td><%= link_to "Categorias", categories_path%></td></tr>
+    <tr><td><%= link_to "Autores", authors_path%></td></tr>
+    <tr><td><%= link_to "Reservas", reservations_path%></td></tr>
+</table>
