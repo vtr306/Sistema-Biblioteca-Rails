@@ -13,17 +13,17 @@
 
   <div class="field">
     <%= form.label :book_id %>
-    <%= form.text_field :book_id %>
+    <%= collection_select(:reservation, :book_id, @books_for_select, :id, :name) %>
   </div>
 
   <div class="field">
     <%= form.label :client_id %>
-    <%= form.text_field :client_id %>
+    <%= collection_select(:reservation, :client_id, @clients_for_select, :id, :name) %>
   </div>
 
   <div class="field">
     <%= form.label :librarian_id %>
-    <%= form.text_field :librarian_id %>
+    <%= collection_select(:reservation, :librarian_id, @librarians_for_select, :id, :email) %>
   </div>
 
   <div class="actions">
