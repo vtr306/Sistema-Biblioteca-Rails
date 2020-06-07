@@ -2,11 +2,16 @@ class Reservation < ApplicationRecord
   belongs_to :book
   belongs_to :client
   belongs_to :librarian
+  
+  after_create :reduce_stock
 
-  after_create :atualize_stock
+  after_destroy :increase_stock
 
   private
-    def atualize_stock
+    def reduce_stock
       self.book.update(stock: book.stock-1)
+    end
+    def increase_stock
+      self.book.update(stock: book.stock+1)
     end
 end
