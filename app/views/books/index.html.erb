@@ -4,11 +4,13 @@
 
 <%= search_form_for @q do |f| %>
 
-  <%= f.label :name_cont, "Título" %>
-  <%= f.search_field :name_cont %>
-  <%= f.label :author_name_cont, "Autor" %>
-  <%= f.search_field :author_name_cont %>
+  <%= f.label :name_cont, "Título:" %>
+  <%= f.search_field :name_cont, class: "form-control" %>
+  <%= f.label :author_name_cont, "Autor:" %> 
+  <%= f.search_field :author_name_cont, class: "form-control" %>
+  <br>
   <%= f.submit %>
+
 <% end %>
 
 
