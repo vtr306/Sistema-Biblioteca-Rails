@@ -2,10 +2,20 @@
 
 <h1>Livros</h1>
 
+<%= search_form_for @q do |f| %>
+
+  <%= f.label :name_cont, "Título" %>
+  <%= f.search_field :name_cont %>
+  <%= f.label :author_name_cont, "Autor" %>
+  <%= f.search_field :author_name_cont %>
+  <%= f.submit %>
+<% end %>
+
+
 <table class="table">
   <thead>
     <tr>
-      <th>Nome</th>
+      <th>Título</th>
       <th>Estoque</th>
       <th>Autor</th>
       <th>Categoria</th>
