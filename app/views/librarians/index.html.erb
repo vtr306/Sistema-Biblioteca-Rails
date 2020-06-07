@@ -2,7 +2,7 @@
 
 <h1>Bibliotecários</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>E-mail</th>
@@ -14,9 +14,9 @@
     <% @librarians.each do |librarian| %>
       <tr>
         <td><%= librarian.email %></td>
-        <td><%= link_to 'Show', librarian %></td>
-        <td><%= link_to 'Edit', edit_librarian_path(librarian) %></td>
-        <td><%= link_to 'Destroy', librarian, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', librarian %></td>
+        <td><%= link_to 'Editar', edit_librarian_path(librarian) %></td>
+        <td><%= link_to 'Excluir', librarian, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>

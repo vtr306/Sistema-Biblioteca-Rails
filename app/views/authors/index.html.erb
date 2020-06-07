@@ -2,7 +2,7 @@
 
 <h1>Autores</h1>
 
-<table>
+<table class = "table">
   <thead>
     <tr>
       <th>Nome</th>
@@ -14,9 +14,9 @@
     <% @authors.each do |author| %>
       <tr>
         <td><%= author.name %></td>
-        <td><%= link_to 'Show', author %></td>
-        <td><%= link_to 'Edit', edit_author_path(author) %></td>
-        <td><%= link_to 'Destroy', author, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', author %></td>
+        <td><%= link_to 'Editar', edit_author_path(author) %></td>
+        <td><%= link_to 'Excluir', author, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>

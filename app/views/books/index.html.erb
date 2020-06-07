@@ -2,7 +2,7 @@
 
 <h1>Livros</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Nome</th>
@@ -20,9 +20,9 @@
         <td><%= book.stock %></td>
         <td><%= book.author.name %></td>
         <td><%= book.category.name %></td>
-        <td><%= link_to 'Show', book %></td>
-        <td><%= link_to 'Edit', edit_book_path(book) %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', book %></td>
+        <td><%= link_to 'Editar', edit_book_path(book) %></td>
+        <td><%= link_to 'Excluir', book, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
