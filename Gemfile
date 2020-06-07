@@ -5,8 +5,12 @@ ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4'
+# Gerador de dados falsos
 gem 'faker'
+# Template
 gem 'adminlte2-rails'
+# Gem para pesquisa
+gem 'ransack'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
