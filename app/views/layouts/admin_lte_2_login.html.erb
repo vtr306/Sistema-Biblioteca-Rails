@@ -21,7 +21,7 @@
     <a href="/"><b>Biblioteca do Juvenal</b></a>
   </div><!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Sign in to start your session</p>
+    <p class="login-box-msg"><%= link_to "Registrar-se", new_user_registration_path %></p>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="form-group has-feedback">
         <%= f.text_field :email, class: 'form-control', autofocus: true %>
