@@ -6,8 +6,12 @@ class User < ApplicationRecord
 
   after_create :create_librarian
 
+  after_destroy :destroy_librarian
   private
     def create_librarian
       Librarian.create!(email: self.email)
+    end
+    def destroy_librarian
+      Librarian.where(email: self.email).destroy_all
     end
 end
