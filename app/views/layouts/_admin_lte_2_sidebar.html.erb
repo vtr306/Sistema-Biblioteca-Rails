@@ -12,9 +12,9 @@
       <div class="pull-left info">
         <% if user_signed_in? %>
           <p><%= current_user.email %></p>
+          <%= link_to 'Editar perfil', edit_user_registration_path %>
         <% end%>
         <!-- Status -->
-        <%= link_to 'Editar perfil', edit_user_registration_path %>
       </div>
     </div>
 
