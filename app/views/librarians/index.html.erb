@@ -14,14 +14,9 @@
     <% @librarians.each do |librarian| %>
       <tr>
         <td><%= librarian.email %></td>
-        <td><%= link_to 'Mostrar', librarian %></td>
-        <td><%= link_to 'Editar', edit_librarian_path(librarian) %></td>
-        <td><%= link_to 'Excluir', librarian, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'Novo Bilbiotecário', new_librarian_path %>
