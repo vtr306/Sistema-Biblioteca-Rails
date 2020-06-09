@@ -10,8 +10,9 @@
     Author.create!(name: Faker::Book.unique.author)
     Category.create!(name: Faker::Book.unique.genre)
     Client.create!(name: Faker::Name.unique.name)
-    Librarian.create!(email: Faker::Internet.unique.email)
 end
+
+User.create!(email: "admin@admin.com", password: "123456")
 
 5.times do
     Book.create!(name: Faker::Book.unique.title, stock: Faker::Number.unique.between(from: 0, to: 10), author: Author.all.sample, category: Category.all.sample)
