@@ -7,6 +7,8 @@ ruby '2.5.1'
 gem 'rails', '~> 5.2.4'
 # Gerador de dados falsos
 gem 'faker'
+# Gem para autenticação de usuário
+gem 'devise'
 # Debugger
 gem 'byebug'
 # Template
