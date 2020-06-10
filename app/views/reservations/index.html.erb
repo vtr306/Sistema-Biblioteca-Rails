@@ -19,7 +19,6 @@
         <td><%= reservation.client.name %></td>
         <td><%= reservation.librarian.email %></td>
         <td><%= link_to 'Mostrar', reservation %></td>
-        <td><%= link_to 'Editar', edit_reservation_path(reservation) %></td>
         <td><%= link_to 'Excluir', reservation, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
