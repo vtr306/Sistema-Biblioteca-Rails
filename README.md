@@ -1,24 +1,19 @@
-# README
+# Sistema de uma biblioteca em Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+O Sistema utiliza Ruby v2.5.1, Rails v5.2.4.3 e PostgreSQL como banco de dados
 
-Things you may want to cover:
+Para utilização rode os comandos a seguir:
 
-* Ruby version
+```sh
+    $ bundle
+    $ rails db:create db:migrate
+    $ rails s
+```
 
-* System dependencies
+Caso queira povoar o sistema rode o comando:
 
-* Configuration
+```sh
+    $ rails db:seed
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+O sistema estará disponível em `localhost:3000`
